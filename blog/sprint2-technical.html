@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Sprint 2 Technical</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+  <header>
+    <h2>What are the differents between relative, absolute, and fixed positioning?</h2>
+  
+      <nav>
+        <li><a href="#AboutMe">About Me</a></li>
+        <li><a href="#DevAcademy">Dev Academy</a></li>
+      
+        <li><a href="#FoundationClass">Foundation Class</a></li>
+        <li><a href="#BootCampClass">BootCamp Class</a></li>
+        
+      </nav>
+  </header>
+  
+<section class="intro">
+    <!--<div class="background-image" style ="background-image: url('../images/nesa-by-makers-752736-unsplash.jpg');"></div>-->
+    <div class="background-image" style ="background-image: url('../images/nesa-by-makers-752736-unsplash.jpg');"></div>
+    <div class="sprint2tech-content-area">
+      
+
+<table>
+  <caption>HTML Postisoning Comparison Table</caption>
+
+  <thead>
+    
+    <tr>
+      <th><strong>ABSOLUTE</strong></th>
+      <th><strong>RELATIVE</strong></th>
+      <th><strong>FIXED</strong></th>
+    </tr>
+
+
+  </thead>
+
+  <tbody>
+      <td>An element with postion:absolute; is positioned relative to the nearest postioned ancestor (instead of position relative to the viewport, like fixed).<br>
+        However, if an absolute position element has no positioned ancestors, it uses the document body, and moves along with page scrolling.<br>
+    </td>
+    <td>An element with position: relative; is positioned relative to its normal position. <br>
+      Setting the top, bottom, and left properties of a relative-positioned element will cause it to be adjusted away from its normal position. <br>
+      Other conent will not adjusted to fit into any gap left by the element. <br>
+    </td>
+    <td>
+      An element with postion:fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. <br>
+      The top, right, bottom and left properties are used to position the element. <br>
+      A fixed element does not leave a gap in the page where it would normally have been located. <br>
+    </td>
+
+  </tbody>
+</table>
+    </div>    
+  </section>
+
+<section class="S2T">
+
+<h1>Let's Explore Together</h1>
+
+<h3>In the beginning there are 2 retangular boxes and they are good!</h3>
+<p>Let's define some HTML structure. If we create 2 retangular boxes, and made them 100px for both height and weight. <br>
+Let one of them be position:static with background color lightskyblue, and the other retangular with background color orange but without declare any position. <br>
+The orange box will appear on top of the lightskyblue box, just like shown in the picture 1. <br>
+<img src="../images/S2T/staticresult.jpg"><br>
+</p>
+
+<h3>Position:Relative</h3>
+<p>However, if we give the orange box with position:relative, and 100px from top relative to its old position and 100px from left. <br>
+Now we can move the element. The orange box is now moved 100px to bottom & right, relative to its normal position. <br>
+<img src="../images/S2T/relativeResult.jpg"><br>
+</p>
+
+<h3>Position:Absolute</h3>
+<p>In position:relative, the element is positioned relative to itself. However, an absolute positioned element is relative to its parent. <br>
+If you put both of them in a container, div class="container", and both boxes are position:absolute, you will only see one box on top of the other. <br>
+<img src="../images/S2T/absoluteResult.jpg"><br>
+Now, move the orange box 5px to the left and 5 px to the top; you will see start to see a bit of lightskyblue box at the bottom. <br>
+<img src="../images/S2T/absoluteResult1.jpg"><br>
+Since the absolute positioned element are relative to its parent, if you put the container as position:relative and move the orange box right:5px, <br>
+5px relative to the most-right of parent. The result will show that lightskyblue box on the top left corner of corner of the container, and the orange box <br>
+will be 5px away from the top right position of container. <br>
+<img src="../images/S2T/absoluteResult2.jpg"><br>
+</p>
+
+<h3>Position:Fixed</h3>
+<p>Like position:absolute, fixed positioned elements are also remove from the normal document flow. The real differences are only 2: <br>
+</p>
+<div>
+  <li>They are <strong>only relative to the html document,</strong> not any other parents.</li>
+  <li>They are <strong>not affected by scrolling</strong>.</li>
+</div>
+
+
+
+</section>
+
+
+
+  </body>
+</html>
