@@ -247,6 +247,29 @@ th{
 	text-align: left;
 }
 
+/*sprint 3 cultural */
+#Sprint3CulturalHeader{
+
+	background-color: lightblue;
+	padding-bottom: 15px;
+}
+
+#EQ {
+	padding-left: 20px;
+}
+
+#WhatisEQ #DanielGoleman{
+	display: flex;
+color: red;
+}
+
+/*Sprint 3 Technical*/
+
+#Sprint3TechnicalHeader{
+
+	background-color: lightblue;
+	padding-bottom: 15px;
+}
 
 
 
