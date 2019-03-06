@@ -95,7 +95,7 @@ There are too many TV channels to choose from when we want to watch TV. Therefor
     <h3>Explain control flow and loops using an example process from everyday life. </h3> <br>
     <p>
       Control frow of a program is the order in which the program's code executed. It normally regulated by conditional statement, loops and function calls. The loop can be if statement, for and while loops. <br>
-      Driving car to work in the morning routiune can be used to explain the relationship between the control flow and looping. Control flow of driving a car to work will be first unlock the car, then start the engine, and in between the start point till the destination, there is a lot of swifting gears and push the break pedal to stop the car, and repeat the process. While push on break pedal is like calling a 'break' function in the programm; and swifting the gear to let the wheel keep rotating at the same speed is the looping procedure. As far as the condition of looping is still met, it will keep on turning the wheel. 
+      Driving car to work in the morning routine can be used to explain the relationship between the control flow and looping. Control flow of driving a car to work will be first unlock the car, then start the engine, and in between the start point till the destination, there is a lot of swifting gears and push the break pedal to stop the car, and repeat the process. While push on break pedal is like calling a 'break' function in the programme; and swifting the gear to let the wheel keep rotating at the same speed is the looping procedure. As far as the condition of looping is still met, it will keep on turning the wheel. 
     </p>
 
 </section>
@@ -126,6 +126,8 @@ todos.push (todo);<br>
 todos [position] = newValue; <br>
 //to delete the data in the arrays. Note: we using () follow by .splice command and not [ ]. <br>
 todo.splice (position, 1); // (position, 1) position here referring to the start of the position in index for delete, and ‘1’ here referring to only delete 1 item, if you need to delete 2 items, just change it to 2.  <br>
+</p>
+<p>
 In general, there is 2 main ways to access the properties in JavaScript using arrays. They are with a dot and with square brackets [ ]. Both value.x and value [x] access a property on value – but not necessarily the same property. The difference is in how x is interpreted. When using the a dot, the word after the dot is the literal name of the property. When using the square brackets, the expression between the brackets is evaluated to get the property name. Whereas value.x fetches the property of value named “x”, value [x] tries to evaluate the expression x and uses the result, converted to a string, as the property name. When in arrays, index value was assigned to each property, for example, index value [0], or [5]. Index value is the items position inside the arrays and it always start with 0 instead of 1. <br>
 </p>
 
