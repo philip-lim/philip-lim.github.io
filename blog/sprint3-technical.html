@@ -1,0 +1,178 @@
+  <!DOCTYPE html>
+<html>
+  <head>
+    <title>Sprint 3 Technical</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
+  </head>
+  
+  <body>
+  
+  <header id="Sprint3TechnicalHeader">
+    <h2>Sprint 3 Technical</h2>
+  
+      <nav>
+        <li><a href="#Analogy">Analogy</a></li>
+        <li><a href="#ControlFlow">Control Flow and Loop</a></li>      
+        <li><a href="#DOM">DOM and Interaction</a></li>
+        <li><a href="#Arrays&Objects">Accessing Arrays & Objects</a></li>
+        <li><a href="#Function">Function</a></li>
+        
+      </nav>
+  </header>
+
+<section id="Analogy">
+<h3>
+    An analogy to describe the differences between HTML and CSS
+</h3>
+<div>
+  <p>
+    A website is like a house. Each house has rooms and each room contains furniture and electric appliances. Similarly, the website has different sections such as header, body and footer, and each section contain text and images. 
+             HTML (HyperText Markup Language) is like the frame of a house. It organises the presents elements of website in a structured hierarchy. <br>
+[code language  = “html”] <br>
+ house                  <br>
+ 2nd floor               <br>
+ 1st floor               <br>
+ bed room                <br>
+ kitchen                <br>
+ entrance                <br>
+ living room …. And so on.<br>
+[/code]                   <br>
+  </p>
+  <p>
+    CSS ( ) is like the look of the house. Not all the room is same design. Here is the example of CSS style the rooms in this manner: <br>
+[code language = “css”] <br>
+Bedroom ={ <br>
+Width: 3m; <br>
+Length: 3.6m; <br>
+Height: 2.4m; <br>
+Wall: 1mm thick wall paper; <br>
+Floor: wool carpet <br>
+} <br>
+[/code] <br>
+  </p>
+</div>
+  <h4>BONUS</h4>
+<div>
+  <p>
+     While the JavaScript is like the moving pieces or electric appliances. For instants, <br>
+[code language = “JavaScript”] <br>
+$(“doorbell”).click(function(){ <br>
+alert(“Ding Dong”) <br>
+}) <br>
+$(“input[type=televisionRemote]”).change (function(){ <br>
+var buttonPressed = $(this).val(); <br>
+if (buttonPressed === “powerButton”){ <br>
+turnOffTelevision(); <br>
+} else { <br>
+goToChannel(“buttonPressed”) <br>
+} <br>
+}) <br>
+[/code] <br>
+<br>
+</p>
+<h4>FRONT END VS BACK END </h4><br>
+<p>
+Now, until now what we have describe is all we can have direct access aka “Front End”. For those what you can’t see or touch are like wiring, pipe, and server-side are called aka “Back End”. <br>
+</p>
+<h4>BACK END</h4> <br>
+<p>
+Static website that built based on the foundation of HTML and CSS, has no security. While those need a tighter security website would require you or use to key in the login name and password before it can allow you to enter. Similarly, a website with “backend” will have all the doors locked, unless you have the key to enter the house. <br>
+
+There are too many TV channels to choose from when we want to watch TV. Therefore, you frequently consult your TV Channel guard, the guard consists a very helpful table associate a channel number with a TV Station, with a TV program that is playing on that station right now. This relationship is very similar to a server that allow us to store, modify and delete data inside the server. <br>
+</p>
+</div>
+
+
+</section>
+
+<hr>
+    
+<section id="ControlFlow">
+  
+    <h3>Explain control flow and loops using an example process from everyday life. </h3> <br>
+    <p>
+      Control frow of a program is the order in which the program's code executed. It normally regulated by conditional statement, loops and function calls. The loop can be if statement, for and while loops. <br>
+      Driving car to work in the morning routiune can be used to explain the relationship between the control flow and looping. Control flow of driving a car to work will be first unlock the car, then start the engine, and in between the start point till the destination, there is a lot of swifting gears and push the break pedal to stop the car, and repeat the process. While push on break pedal is like calling a 'break' function in the programm; and swifting the gear to let the wheel keep rotating at the same speed is the looping procedure. As far as the condition of looping is still met, it will keep on turning the wheel. 
+    </p>
+
+</section>
+
+<hr>
+
+<section id="DOM">
+  <h3>Describe what the DOM is and an example of how you might interact with it.</h3> <br>
+  <p>The DOM stands for Document Object Model and it is the glue that ties HTML, CSS and JavaScript together. </p>
+ <img src="../images/S3T/DOM.jpg"><br>
+</section>
+ 
+<hr>
+
+<section id="Arrays&Objects">
+<h3>Explain the difference between accessing data from arrays and objects.</h3> <br>
+<h4>Arrays Data Accessing</h4>
+<p>
+  It pretty much depend what you want to do with the data. Let’s say you have an arrays <br>
+  var todos = [“item 1”, “item 2”, item 3”]; <br>
+//Just to DISPLAY data from arrays. You can use console.log to display it. <br>
+console.log (todos); <br>
+// you just want to display certain properties inside the arrays, let’s say item # 3. <br>
+Console.log (todos[2]);<br>
+//To add to arrays. You use var name connect with a notation .push (var name). Note use () after the .push command and not [ ]; <br>
+todos.push (todo);<br>
+//to change the arrays’ data. We use the index value in the array, in this case is position, such as todo [0] = newValue refer to the item 1 in the array. Note: we also using [ ] for the position instead of (); <br>
+todos [position] = newValue; <br>
+//to delete the data in the arrays. Note: we using () follow by .splice command and not [ ]. <br>
+todo.splice (position, 1); // (position, 1) position here referring to the start of the position in index for delete, and ‘1’ here referring to only delete 1 item, if you need to delete 2 items, just change it to 2.  <br>
+In general, there is 2 main ways to access the properties in JavaScript using arrays. They are with a dot and with square brackets [ ]. Both value.x and value [x] access a property on value – but not necessarily the same property. The difference is in how x is interpreted. When using the a dot, the word after the dot is the literal name of the property. When using the square brackets, the expression between the brackets is evaluated to get the property name. Whereas value.x fetches the property of value named “x”, value [x] tries to evaluate the expression x and uses the result, converted to a string, as the property name. When in arrays, index value was assigned to each property, for example, index value [0], or [5]. Index value is the items position inside the arrays and it always start with 0 instead of 1. <br>
+</p>
+
+<h4>Objects Data Accesing</h4>
+<p>
+    Objects is a bit different from array. In JavaScript, we use Object to group related data with function together. Object only uses value.x to fetch the property of value name x. <br>
+      Let’s setup an object first <br>
+      var myComputer { <br>
+      operatingSystem: “mac”, <br>
+      screenSize: “15 inches”, <br> 
+      purchaseYear: 2011 <br>
+      } ; <br>
+
+      //to display data in arrays. You type objectName.propertyName. it will give you the value. <br>
+      ........................................................................<br>
+      myComputer.operatingSystem //-> “mac” <br>
+      myComputer.purchaseYear => 2011 <br>
+      <br>
+      //however, since objects allow to have function inside the object, and if you would like to display your data will be like below: <br>
+      var myComputer { <br>
+      purchaseYear: “2011”, <br>
+      sayPurchaseYear: function() { <br>
+      console.log (this.purchaseYear); <br>
+      } //myComputer is the object and sayPurchaseYear is called ‘the method’ <br>
+      ........................................................................<br>
+
+      myComputer.sayPurchaseYear(); //-> 2011 <br>
+</p>
+  
+</section>
+
+<hr>
+
+<section id="Function">
+    <h3>Explain what functions are and why they are useful.</h3><br>
+ <div>
+        <p>Function is just like cooking recipe or any type of recipe. Once you give it to someone and they used it, it will always produce the same output. It is useful because <br>
+        </p>
+
+        <p>
+          1. It help the code writing more efficient and organise rather than repeating itself too many times. <br>
+          2. Functions are one of the fundamental building blocks in JavaScript. A function is a JavaScript procedure—a set of statements that performs a task or calculates a value. To use a function, you must define it somewhere in the scope from which you wish to call it. <br>
+        </p>
+ </div>        
+ 
+</section>
+ 
+
+  </body>
+</html>
