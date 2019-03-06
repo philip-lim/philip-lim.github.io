@@ -14,11 +14,11 @@
     <h2>What are the differents between relative, absolute, and fixed positioning?</h2>
   
       <nav>
-        <li><a href="#AboutMe">About Me</a></li>
-        <li><a href="#DevAcademy">Dev Academy</a></li>
+        <li><a href="#Static">Static</a></li>
+        <li><a href="#Relative">Relative</a></li>
       
-        <li><a href="#FoundationClass">Foundation Class</a></li>
-        <li><a href="#BootCampClass">BootCamp Class</a></li>
+        <li><a href="#Absolute">Absolute</a></li>
+        <li><a href="#Fixed">Fixed</a></li>
         
       </nav>
   </header>
@@ -66,19 +66,24 @@
 
 <h1>Let's Explore Together</h1>
 
+<section id="Static">
 <h3>In the beginning there are 2 retangular boxes and they are good!</h3>
 <p>Let's define some HTML structure. If we create 2 retangular boxes, and made them 100px for both height and weight. <br>
 Let one of them be position:static with background color lightskyblue, and the other retangular with background color orange but without declare any position. <br>
 The orange box will appear on top of the lightskyblue box, just like shown in the picture 1. <br>
 <img src="../images/S2T/StaticResult.jpg"><br>
 </p>
+</section>
 
+<section id="Relative">
 <h3>Position:Relative</h3>
 <p>However, if we give the orange box with position:relative, and 100px from top relative to its old position and 100px from left. <br>
 Now we can move the element. The orange box is now moved 100px to bottom & right, relative to its normal position. <br>
 <img src="../images/S2T/RelativeResult.jpg"><br>
 </p>
+</section>
 
+<section id="Absolute">
 <h3>Position:Absolute</h3>
 <p>In position:relative, the element is positioned relative to itself. However, an absolute positioned element is relative to its parent. <br>
 If you put both of them in a container, div class="container", and both boxes are position:absolute, you will only see one box on top of the other. <br>
@@ -90,7 +95,9 @@ Since the absolute positioned element are relative to its parent, if you put the
 will be 5px away from the top right position of container. <br>
 <img src="../images/S2T/AbsoluteResult2.jpg"><br>
 </p>
+</section>
 
+<section id="Fixed">
 <h3>Position:Fixed</h3>
 <p>Like position:absolute, fixed positioned elements are also remove from the normal document flow. The real differences are only 2: <br>
 </p>
@@ -98,7 +105,7 @@ will be 5px away from the top right position of container. <br>
   <li>They are <strong>only relative to the html document,</strong> not any other parents.</li>
   <li>They are <strong>not affected by scrolling</strong>.</li>
 </div>
-
+</section>
 
 
 </section>
